@@ -64,15 +64,15 @@ function writeToFile(fileName, data)  {
 // TODO: Create a function to initialize app
 function init() {
    inquirer.prompt(questions)
-    //.then((data)) = writeFile('index.html', generateHTML(data))
-    //  .then(() => console.log('Successfully wrote to index.html'))
+  .then((data) => {fs.writeFileSync('README.md', generateMarkdown(data))})
+      .then(() => console.log('Successfully wrote to README.md'))
     //  .catch((err) => console.error(err));
 };
 
 // .then(answers) => {
 //   const htmlPageContent = generateMarkdown(answers);
 
-//   fs.writeFile("index.html", htmlPageContent,(err)=>
+ //fs.writeFile("index.html", htmlPageContent,(err)=>
 //   err ? console.log(err) : console.log("Successfully created index.html!")
 //   );
 // });

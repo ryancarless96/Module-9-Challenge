@@ -49,8 +49,8 @@ function generateMarkdown({
   name, title, github, description, installation, usage, contributing, tests, license
 }) {
   const sections = ["Name", "Title", "GitHub", "Description", "Installation", "Usage", "Contributing", "Tests", "License"];
-  return `# ${data.title}
-<README-a Maker>
+  return `# ${title}
+
 ## ${name}
 Write down your name.
 
