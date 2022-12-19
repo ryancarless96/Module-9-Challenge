@@ -26,9 +26,9 @@ function renderLicenseLink(license) {
     case "GNU":
       licenseLink = "https://www.gnu.org/gnu/linux-and-gnu.html#:~:text=If%20you%20want%20to%20make%20a%20link%20on,https%3A%2F%2Ffoldoc.org%2Flinux%20is%20a%20good%20URL%20to%20use.%20Postscripts";
       break;
-      default:
-        licenseLink = "";
-        break;
+    default:
+      licenseLink = "";
+      break;
   }
   return licenseLink;
 }
@@ -37,10 +37,10 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = "";
-if (license !="None") {
-  licenseSection += "## License/n"
-  licenseSection += "Please see" + renderLicenseLink(license) + "to get detailed info for this license/n";
-}
+  if (license != "None") {
+    licenseSection += "## License/n"
+    licenseSection += "Please see" + renderLicenseLink(license) + "to get detailed info for this license/n";
+  }
   return licenseSection;
 }
 

@@ -1,6 +1,6 @@
 # Challenge 9
 
-## Ryan
+## ryan
 Write down your name.
 
 ## Challenge 9
@@ -19,10 +19,10 @@ Provide a short description explaining the what, why, and how of your project. U
 ## VS Code
 What are the steps required to install your project? Provide a step-by-styep description of how to get the development environment running.
 
-## to create READMEs in the terminal
+## to create READMEs through the terminal
 Provide instructions and examples for use. Include screenshots as needed.
 
-## i am the sole contributor
+## I am the sole contributor
 Write down the contributors of this application.
 
 ## through VS Code
@@ -30,5 +30,3 @@ Go the extra mile and write tests for your application. Then provide examples on
 
 ## MIT
 Place a license in this application.
-
-
