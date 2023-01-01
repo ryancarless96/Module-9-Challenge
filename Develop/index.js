@@ -12,6 +12,11 @@ const questions = [
   },
   {
     type: 'input',
+    name: 'email',
+    message: 'What is your email address?'
+  },
+  {
+    type: 'input',
     name: 'title',
     message: 'What is the title of challenge?'
   },
@@ -66,7 +71,7 @@ function init() {
   inquirer.prompt(questions)
     .then((data) => { fs.writeFileSync('README.md', generateMarkdown(data)) })
     .then(() => console.log('Successfully wrote to README.md'))
-  //  .catch((err) => console.error(err));
+    .catch((err) => console.error(err));
 };
 
 // .then(answers) => {

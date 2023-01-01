@@ -122,5 +122,5 @@ You are required to submit the following for review:
 
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
 
-## Video Link: 
- https://www.youtube.com/watch?v=aZDwb2Up4g4&feature=youtu.be
+## Links
+https://www.youtube.com/watch?v=aZDwb2Up4g4&feature=youtu.be
