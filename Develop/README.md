@@ -1,32 +1,52 @@
-# 
+# README-a-Maker
+![License Badge] (https://shields.io/badge/license-Apache 2.0-green)
 
-## 
-Write down your name.
+## Description
 
-## 
-Write down the title of your application.
+to produce READMEs using the terminal in VS Code
 
-## 
--Provide a link of your GitHub username.
+## Table of Contents 
 
-## 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project?
-- What problem does it solve?
-- What did you learn? 
+* [Installation](#installation)
+node index.js
 
-## 
-What are the steps required to install your project? Provide a step-by-styep description of how to get the development environment running.
+* [Usage](#usage)
+https://www.apache.org/licenses/LICENSE-2.0.html
+* [Contributing](#contributing)
+I am the sole contributor
 
-## 
-Provide instructions and examples for use. Include screenshots as needed.
+* [Tests](#tests)
+undefined
 
-## 
-Write down the contributors of this application.
+* [Questions](#questions)
 
-## 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+## Installation
 
-## Apache 2.0
-Place a license in this application.
+To install necessary dependencies, run the following command:
+
+```
+node index.js
+```
+
+## Usage
+
+to write down personal information into a README
+
+## License/nPlease seehttps://www.apache.org/licenses/LICENSE-2.0.htmlto get detailed info for this license/n
+  
+## Contributing
+
+I am the sole contributor
+
+## Tests
+
+To run tests, run the following command:
+
+```
+undefined
+```
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at ryancarless96@gmail.com. You can find more of my work at [ryancarless96](https://github.com/ryancarless96/).
+

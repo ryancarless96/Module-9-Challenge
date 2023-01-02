@@ -1,15 +1,10 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
-const index = require("../index.js");
-
-// TODO: Create a function that returns a license badge based on which license is passed in
+ //Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let badge = "";
   if (license != "None") {
-    badge = "![License Badge] (https://shields.io/badge/license-" + license + "-green)"
+    return "![License Badge] (https://shields.io/badge/license-" + license + "-green)";
   }
-  return badge;
+  return "";
 }
 
 // TODO: Create a function that returns the license link
@@ -45,42 +40,63 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({
-  name, title, github, description, installation, usage, contributing, tests, license
-}) {
-  const sections = ["Name", "Title", "GitHub", "Description", "Installation", "Usage", "Contributing", "Tests", "License"];
-  return `# ${title}
+function generateMarkdown(data) {
+  return `# ${data.title}
+${renderLicenseBadge(data.license)}
 
-## ${name}
-Write down your name.
+## Description
 
-## ${title}
-Write down the title of your application.
+${data.description}
 
-## ${github}
--Provide a link of your GitHub username.
+## Table of Contents 
 
-## ${description}
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-- What was your motivation?
-- Why did you build this project?
-- What problem does it solve?
-- What did you learn? 
+* [Installation](#installation)
+${data.installation}
 
-## ${installation}
-What are the steps required to install your project? Provide a step-by-styep description of how to get the development environment running.
+* [Usage](#usage)
+${renderLicenseLink(data.license)}
+* [Contributing](#contributing)
+${data.contributing}
 
-## ${usage}
-Provide instructions and examples for use. Include screenshots as needed.
+* [Tests](#tests)
+${data.test}
 
-## ${contributing}
-Write down the contributors of this application.
+* [Questions](#questions)
 
-## ${tests}
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+## Installation
 
-## ${license}
-Place a license in this application.
+To install necessary dependencies, run the following command:
+
+\`\`\`
+${data.installation}
+\`\`\`
+
+## Usage
+
+${data.usage}
+
+${renderLicenseSection(data.license)}
+  
+## Contributing
+
+${data.contributing}
+
+## Tests
+
+To run tests, run the following command:
+
+\`\`\`
+${data.test}
+\`\`\`
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at ${
+    data.email
+  }. You can find more of my work at [${data.github}](https://github.com/${
+    data.github
+  }/).
+
 `;
 }
 
