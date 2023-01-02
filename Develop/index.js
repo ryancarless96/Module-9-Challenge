@@ -7,23 +7,18 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: 'input',
-    name: 'name',
-    message: 'What is your name?',
+    name: 'github',
+    message: 'Place your github username:',
   },
   {
     type: 'input',
     name: 'email',
-    message: 'What is your email address?'
+    message: 'Place your email address:'
   },
   {
     type: 'input',
     name: 'title',
-    message: 'What is the title of challenge?'
-  },
-  {
-    type: 'input',
-    name: 'github',
-    message: 'Where is your GitHub username?'
+    message: "Place your project's title:"
 
   },
   {
@@ -34,7 +29,7 @@ const questions = [
   {
     type: `input`,
     name: `installation`,
-    message: `How is this installed?`
+    message: `How do you install this project?`
   },
   {
     type: `input`,
@@ -71,7 +66,7 @@ function init() {
   inquirer.prompt(questions)
     .then((data) => { fs.writeFileSync('README.md', generateMarkdown(data)) })
     .then(() => console.log('Successfully wrote to README.md'))
-    .catch((err) => console.error(err));
+   .catch((err) => console.error(err));
 };
 
 // .then(answers) => {
